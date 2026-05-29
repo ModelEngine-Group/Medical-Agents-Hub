@@ -21,13 +21,15 @@
 
 我们欢迎每一位成员参与内容的贡献与优化，推动资源的开放共享，通过透明、健康的社区治理机制，让这个知识社区持续生长。
 
-🎒 2026年第一期课程表
-|  课程Lesson   | 讲义及视频 Text & Video  | 其他学习资料 Extra Learning |
-|  ----  | ----  | ----  |
-| 人工智能通识课（0基础版）  | Link | Link |
-| 医疗智能体综述及相关政策分享  | Coming Soon | Coming Soon |
-| 医疗数据处理及知识库生成方法介绍  | Coming Soon | Coming Soon |
-| 智能体开发工具Nexent使用介绍  | Coming Soon | Coming Soon |
-| 医疗专属提示词工程及 MCP/skills 开发  | Coming Soon | Coming Soon |
-| 南方医院-医疗领域案例分享<br>门诊规范查询助手 + 出凝血功能评估案例  | Coming Soon | Coming Soon |
-| 南方医院-医疗领域案例分享<br>医保智能审核 + 南方智麻案例  | Coming Soon | Coming Soon |
+
+🗃️ 课程表
+
+|  课程Lesson   | 讲义Handout| 视频Video | 扩展学习资料 Extra Learning |
+|  ----  | ----  | ----  |-----------------------|
+| 人工智能通识课（0基础版）  | Link：https://gitcode.com/ModelEngine/Medical-Agents-Hub/blob/main/01-learning%20resources/01-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9A%E8%AF%86%E8%AF%BE%E7%A8%8B.pdf | Link | Link：https://gitcode.com/ModelEngine/Medical-Agents-Hub/issues/2                |
+| 医疗智能体综述及相关政策分享  | Coming Soon | Coming Soon | Coming Soon           |
+| 医疗数据处理及知识库生成方法介绍  | Coming Soon | Coming Soon | Coming Soon           |
+| 智能体开发工具Nexent使用介绍  | Coming Soon | Coming Soon | Coming Soon           |
+| 医疗专属提示词工程及 MCP/skills 开发  | Coming Soon | Coming Soon | Coming Soon           |
+| 南方医院-医疗领域案例分享<br>门诊规范查询助手 + 出凝血功能评估案例  | Coming Soon | Coming Soon | Coming Soon           |
+| 南方医院-医疗领域案例分享<br>医保智能审核 + 南方智麻案例  | Coming Soon | Coming Soon | Coming Soon           |
