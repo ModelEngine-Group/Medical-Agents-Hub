@@ -18,7 +18,7 @@
 **分步部署流程**
 
 1.  **分发镜像**
-2.  执行分发镜像
+
 
 bash distribute\_images.sh
 
