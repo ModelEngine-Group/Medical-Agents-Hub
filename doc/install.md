@@ -4,6 +4,9 @@
 
 本文档用于指导模型引擎相关组件（datamate、模型、pathbot）的部署操作，包含前置检查、卸载清理及分步部署流程，操作前请确认具备对应权限。
 
+下载地址:https://ruipath-image.obs.ap-southeast-1.myhuaweicloud.com:443/ruipath_25.zip?AccessKeyId=HPUAD8EHADYJSZGYIQBR&Expires=1788866117&Signature=O1aGcYiZD8gSN9wnk%2BXnQsAngzI%3D
+下载后执行unzip ruipath_25.zip
+
 **前置检查与卸载清理**
 
 1.  查看model-engine命名空间下所有Pod状态，确认是否存在旧组件Pod：  
@@ -40,7 +43,7 @@ bash distribute\_images.sh
 
 例如我这个就是https://192.168.245.53:30000
 
-**3\. 部署模型（ruipath）**
+**4\. 部署模型（ruipath）**
 
 1.  导入密钥，执行
 
@@ -69,12 +72,24 @@ bash deploy-secret.sh -n model-engine
 
 例如我这个就是110.122.0.37:36666
 
-**4\. 部署病理应用（pathbot）**
+
+**4\. 部署appengine**
+
+1.  cd AppEngine_opensource-1.3.4_Aarch64/tools
+    bash install.sh --ns appengine --storage-class my-storage-class
+    -- ns 命名空间 --storage-class 存储名字
+
+2.  打开add_role_new.sh，修改命令空间和gaussdb的POD名字为自己环境的名字
+
+
+
+**5\. 部署病理应用（pathbot）**
 
 **前提条件**：appengine已完成部署
 
-1.  执行pathbot部署脚本：  
-    bash deploy\_pathbot.sh
+1.  cd Pathobot_opensource-1.0.0-20260821111055_Aarch64/tools
+    bash install.sh --ns appengine --storage-class my-storage-class
+    -- ns 命名空间 --storage-class 存储名字
 
 然后按照提示填写需要的内容，会需要镜像仓的密码
 
