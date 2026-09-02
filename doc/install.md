@@ -5,6 +5,7 @@
 本文档用于指导模型引擎相关组件（datamate、模型、pathbot）的部署操作，包含前置检查、卸载清理及分步部署流程，操作前请确认具备对应权限。
 
 下载地址:https://ruipath-image.obs.ap-southeast-1.myhuaweicloud.com:443/ruipath_25.zip?AccessKeyId=HPUAD8EHADYJSZGYIQBR&Expires=1788866117&Signature=O1aGcYiZD8gSN9wnk%2BXnQsAngzI%3D
+
 里面包括ruipath推理镜像，datamate安装包，appengine安装包，pathobot安装包以及各种脚本
 下载后放到master节点，然后执行unzip ruipath_25.zip
 
@@ -65,7 +66,7 @@ bash deploy-secret.sh -n model-engine
 3.  执行模型部署脚本：  
 
     bash deploy\_model.sh -n model-engine -d ruipath-infernece -p 主节点ip
-    
+
 4.  查看所有Pod状态，确认模型相关Pod运行正常
 
 运行cat /etc/haproxy/haproxy.cfg可以找到数据飞轮前端的ip。寻找类似这种名字的。
@@ -82,7 +83,7 @@ bash deploy-secret.sh -n model-engine
     bash install.sh --ns appengine --storage-class my-storage-class
     -- ns 命名空间 --storage-class 存储名字
 
-2.  打开add_role_new.sh，修改命名空间和gaussdb的POD名字为自己环境的名字
+2.  打开add_role_new.sh，修改文件14行和15行的内容，把命名空间和gaussdb的POD名字为自己环境的名字
 
 
 
